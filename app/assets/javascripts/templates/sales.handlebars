@@ -1,0 +1,34 @@
+<div class="container">
+
+  <div class="row well" >
+  
+    {{#each model}}
+    
+       <div class="col-xs-3">
+           <span> {{clientName}} </span>
+      </div><!-- closes .xs-3 -->
+  
+     <div class="col-xs-3">
+        state:  <span class="btn btn-danger btn-xs"> {{state}} </span>
+     </div><!-- closes .xs-3 -->
+  
+      <div class="col-xs-3">
+         amount:  <span class="badge">  ${{amount}} </span>
+      </div><!-- closes .xs-3 -->
+  
+       <div class="col-xs-3">
+        stage:  <span class="btn btn-danger btn-xs"> {{stage}} </span> 
+       </div><!-- closes .xs-3 -->
+    
+        <div class="col-xs-3">
+        probability: <span class="badge"> {{probability}} % </span>
+      </div><!-- closes .xs-4 -->
+  
+     {{/each}}
+     
+     {{outlet}}
+  
+</div> <!-- closes .row -->
+ 
+  
+</div> <!-- closes container -->

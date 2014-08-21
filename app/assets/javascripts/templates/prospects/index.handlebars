@@ -1,0 +1,26 @@
+<div class="panel panel-default" style="margin-left: 15px; margin-right: 15px">
+   <div class="panel-heading">
+     <h3 class="panel-title">   </h3>
+   </div> <!-- closes .panel-heading -->
+   <div class="panel-body">
+     <div class="row">
+     
+     {{#each model}}
+     
+       <div class="col-md-4">
+           <img {{bind-attr src='image' }}  style="width: 100px; height: 100px" /> 
+           
+           <div class="panel-title"> 
+              {{#link-to 'prospect' this class='btn btn-success btn-xs'}} {{name}} {{/link-to}}
+          </div>
+           
+       </div> <!-- closes .col-md-4 -->
+         
+         {{/each}}
+         
+         {{outlet}}
+         
+      </div>  <!-- closes .row -->
+   </div> <!-- closes .panel-body -->
+</div> <!-- closes .panel-default -->
+

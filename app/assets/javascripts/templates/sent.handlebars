@@ -1,0 +1,21 @@
+<div class="row">
+
+  <table  class="table table-striped table-responsive">
+       <tr>
+         <th> from</th>
+         <th>subject</th>
+         <th> date</th>
+       </tr>
+    {{#each sentBox}}
+        <tr>
+           <td> {{from}} </td>
+           <td> {{subject}} </td>
+           <td> {{weekday date}} </td>
+       </tr>
+    {{/each}}
+
+      </table>
+      
+      {{outlet}}
+
+</div> <! closes .row -->

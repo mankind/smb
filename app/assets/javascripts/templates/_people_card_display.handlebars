@@ -1,0 +1,29 @@
+
+<div class="panel panel-default" style="margin-left: 15px; margin-right: 15px">
+   <div class="panel-heading">
+     <h3 class="panel-title">Panel title</h3>
+   </div> <!-- closes .panel-heading -->
+   <div class="panel-body">
+     <div class="row">
+     
+     
+       <div class="col-md-4">
+           <img src="http://placehold.it/140x140" class="img-rounded" style="width: 100px; height: 100px" />
+       </div>
+       <div class="col-md-4" id="accordion">
+            <a data-toggle="collapse" {{bind-attr href="view.href"}}>
+         See more 2
+           </a>
+           
+          <div id="collapseOne" class="panel-collapse collapse">
+              <div class="panel-body">
+                   {{name}}
+              </div> <!-- closes .panel-body -->
+           </div> <!-- closes .panel-collapse -->
+       </div> <!-- closes .col-md-4 with id=accordion -->
+         
+       
+         
+      </div>  <!-- closes .row -->
+   </div> <!-- closes .panel-body -->
+</div> <!-- closes .panel-default -->

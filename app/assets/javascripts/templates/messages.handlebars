@@ -1,0 +1,27 @@
+
+<div class="container">
+
+  <div class="row col-xs-3">
+    <div class="tabbable tabs-left">
+        <ul class="nav nav-tabs">
+          <p>{{#link-to 'inbox'  tagName='li'  data-toggle="tab" 
+    class="active" id="tab-a"}} inbox {{/link-to}}</p>
+            
+          <p>{{#link-to 'sent' tagName='li'  data-toggle="tab"}} sent {{/link-to}}</p>
+            
+          <p>{{#link-to 'spams' tagName='li' data-toggle="tab"}} spams {{/link-to}}</p>
+         
+         </ul>
+      </div> <!-- closes tabbable -->
+  </div>
+
+  <div class="row col-xs-9">
+            
+    <div class="tab-content">
+     <div class="tab-pane active" id="tab-a">
+    
+         {{outlet}}
+       </div>
+    </div>
+  </div>
+</div> <!-- closes container -->

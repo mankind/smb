@@ -1,0 +1,119 @@
+<div class="container">
+  <div class="row">
+        <div class="col-md-4">
+        
+        <div class="well">
+             <img {{bind-attr src='image' }}  style="width: 250px; height: 250px" /> 
+      </div> <!-- closes class .well -->
+              
+          <div class="panel">
+              <div class="panel-heading">
+                  <i class="icon icon-chevron-up chevron"></i>
+                  <i class="icon icon-wrench pull-right"></i> click for more
+               </div><!-- closes .panel-heading -->
+
+                <div class="panel-content">
+                 
+                   <div class="btn-group btn-group-justified">
+                      <a class="btn btn-primary col-sm-2" href="#">
+                         <i class="glyphicon glyphicon-google-plus"></i>
+                          <p>g+</p>
+                      </a>
+                       <a class="btn btn-primary col-sm-2" href="#">
+                          <i class="glyphicon glyphicon-twitter"></i>
+                          <p>twitter</p>
+                       </a>
+                       <a class="btn btn-primary col-sm-2" href="#">
+                          <i class="glyphicon glyphicon-github"></i>
+                        <p>github</p>
+                       </a>
+                       <a class="btn btn-primary col-sm-2" href="#">
+                         <i class="glyphicon glyphicon-envelope"></i>
+                         <p>email</p>
+                        </a>
+                        <a class="btn btn-primary col-sm-2" href="#">
+                         <i class="glyphicon glyphicon-facebook"></i>
+                         <p>FB</p>
+                        </a>
+                        <a class="btn btn-primary col-sm-2" href="#">
+                         <i class="glyphicon glyphicon-linkedin"></i>
+                         <p>LNKD</p>
+                        </a>
+                      </div> <!-- closes .btn-group-justified -->
+                  </div><!-- .panel-content-->
+              </div><!-- .panel-->
+              
+              
+              <div class="panel panel-default">
+                 <div class="panel-heading">Monthly average visits - lasts 5 months</div>
+
+                  <table class="table table-striped">
+                      <thead>
+                        <tr><th>Visits</th><th>Device</th><th>Source</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>45</td><td>desktop</td><td>Referral</td></tr>
+                        <tr><td>289</td><td>tablet</td><td>Referral</td></tr>
+                        <tr><td>98</td><td>android mobile</td><td>Direct</td></tr>
+                        <tr><td>50</td><td>iphone</td><td>Direct</td></tr>
+                        <tr><td>80</td><td>iphone</td><td>Direct</td></tr>
+                      </tbody>
+               	</table>
+              </div><!-- closes .panel panel-default-->
+              
+             
+          </div> <!-- closes .col-md-6 under .row -->
+            
+
+        	<div class="col-md-4">
+          
+             <div class="well">
+                Inbox Messages <span class="badge pull-right"> 0
+                </span>
+            </div> <!-- closes class .well -->
+          
+		       <div class="panel panel-default">
+                  <div class="panel-heading">Social activities</div>
+                  <div class="panel-body">
+                    <span class="btn btn-danger btn-xs"> Recent Facebook posts. </span>
+                    <br/>
+                    {{lastFacebookComment}}
+                      <br/> <br/>
+                      <span class="btn btn-danger btn-xs"> Recent tweets </span>
+                      <br/>
+                      {{lastTweet}}
+                  </div>  <!-- closes .panel-body -->
+              	</div> <!-- closes panel panel-default -->
+                
+                <div class="panel panel-default">
+                  <div class="panel-heading">Social Proof</div>
+                  <div class="panel-body">
+                   <!-- comment out charts section
+                     <img class="img-responsive" src="http://www.wired.com/playbook/wp-content/uploads/2012/08/data-tracking-run-chart.jpg" /> 
+                  
+                    -->   
+                  </div><!-- closes panel-body -->
+                </div><!-- closes .panel panel-default-->
+
+                  <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <div class="panel-title">Engagement</div>
+                  </div> <!-- closes .panel-heading -->
+
+                  <div class="panel-body pull-center">	
+                   	
+                      <img class="img-circle" src="http://placehold.it/90X90/CC2222/FFF" />
+                    
+                      <img class="img-circle" src="http://placehold.it/90X90/11CC22/FFF" />
+                    
+                      <img class="img-circle" src="http://placehold.it/90X90/EEEEEE/222" />
+                    
+                  </div> <!closes .panel-body pullcenter -->
+               </div><!-- closes .panel panel-default -->
+              
+              
+           	</div><!-- .col-md-6-->
+     
+     </div> <!-- closes .row -->
+
+</div> <!-- closes .container -->

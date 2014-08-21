@@ -1,0 +1,38 @@
+
+<div class="row">
+
+   <table class="table table-hover table-responsive">
+     <tr>
+      <th> Name </th>
+      <th> Objective</th>
+      <th> Goal </th>
+      <th> Target Locality </th>
+      <th> Target Demographics </th>
+      <th>All Social Networks </th>
+      <th> Active </th>
+      <th> Start On </th>
+      <th> End On </th>
+     </tr>
+     {{#each model}}
+       <tr>
+         <td> {{name}} </td>
+         <td> {{objective}} </td>
+         <td> {{goal}} </td>
+         <td>  {{targetLocality}} </td>
+         <td> {{targetDemographic}} </td>
+         <td> {{allSocialNetworks}} </td>
+         <td> {{active}} </td>
+         <td> {{daytime startOn}} </td>
+         <td>  {{daytime endOn}} </td>
+       
+       </tr>
+     
+     {{/each }}
+   
+   </table>
+
+
+{{outlet}}
+
+</div> <!-- closes row" -->
+

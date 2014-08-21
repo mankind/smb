@@ -1,0 +1,121 @@
+/* 
+If you need to configure a variable or two? Simply define the value of the variable 
+you want to change before importing Bootstrap. Sass will respect your existing 
+definition rather than overwriting it with the Bootstrap defaults
+*/
+
+/*An example of a variable being customised. Note the $ sign denotes a avariable */
+
+/*make the navbar green */
+/*$navbar-default-bg: #00FF00;  */
+$navbar-default-bg: #FFCC00;   /* #000000; */
+
+/* defining a variable for reuse later*/
+$light-orange: #ff8c00;  
+
+/* reusing the above variable */
+/* this changes navbar-text  color for the signed in on the navbar*/
+$navbar-default-color: $light-orange; 
+
+/* The line includes the entire bootstrap css framework*/
+@import  "bootstrap";
+
+
+body {
+  padding: 60px 10px 10px 10px;
+  margin-top: 10px;
+  margin: 10px;
+}
+
+a {
+  cursor: pointer;
+}
+
+span {
+  cursor: pointer;
+}
+/* mov marketing main content right away from sidebar */
+.marketing { margin:15px; }
+
+
+/* http://stackoverflow.com/questions/18432577/stacked-tabs-in-bootstrap-3 */
+
+
+.tabs-right > .nav-tabs,
+.tabs-left > .nav-tabs {
+  border-bottom: 0;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+
+
+.tabs-left > .nav-tabs > li,
+.tabs-right > .nav-tabs > li {
+  float: none;
+}
+
+.tabs-left > .nav-tabs > li > a,
+.tabs-right > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
+.tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 19px;
+  border-right: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+}
+
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+  *border-right-color: #ffffff;
+}
+
+.tabs-right > .nav-tabs {
+  float: right;
+  margin-left: 19px;
+  border-left: 1px solid #ddd;
+}
+
+.tabs-right > .nav-tabs > li > a {
+  margin-left: -1px;
+  -webkit-border-radius: 0 4px 4px 0;
+     -moz-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
+}
+
+.tabs-right > .nav-tabs > li > a:hover,
+.tabs-right > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #eeeeee #eeeeee #dddddd;
+}
+
+.tabs-right > .nav-tabs .active > a,
+.tabs-right > .nav-tabs .active > a:hover,
+.tabs-right > .nav-tabs .active > a:focus {
+  border-color: #ddd #ddd #ddd transparent;
+  *border-left-color: #ffffff;
+}

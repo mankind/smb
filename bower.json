@@ -1,0 +1,6 @@
+{
+  "name": "smb-javascript-dependencies",
+  "dependencies": {
+    "jquery-file-upload": "~9.5.2"
+  }
+}

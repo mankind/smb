@@ -1,0 +1,36 @@
+<div class="row">
+
+  <div class="col-xs-4 well">
+       Mails  <span class="badge pull-right"> {{model.length}}</span>
+  </div><!-- closes .xs-4 -->
+  
+    <div class="col-xs-4 well">
+         open rate <span class="badge pull-right">2</span>
+  </div><!-- closes .xs-4 -->
+  
+   <div class="col-xs-4 well">
+        survey response <span class="badge pull-right">0</span>
+  </div><!-- closes .xs-4 -->
+  
+</div> <!-- closes .row -->
+
+
+<div class="row">
+    <table  class="table table-hover table-responsive">
+       <tr>
+         <th> from</th>
+         <th>subject</th>
+         <th> date</th>
+       </tr>
+    {{#each getInbox}}
+       <tr>
+           <td>{{#link-to 'singleMessage' this}} {{from}} {{/link-to}}</td>
+           <td> {{#link-to 'singleMessage' this}} {{subject}} {{/link-to}} </td>
+           <td> {{weekday date}} </td>
+       </tr>
+    {{/each}}
+    </table>
+
+    {{outlet}}
+</div> <!-- closes .row -->
+
